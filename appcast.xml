@@ -4,6 +4,20 @@
         <title>terminals</title>
         <item>
             <title>1.0.0</title>
+            <pubDate>Tue, 26 May 2026 01:58:10 -0300</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.1
+
+Versão de teste do pipeline de release automatizado.
+
+Sem mudanças visíveis — valida o canal de auto-update end-to-end (Sparkle baixa, verifica assinatura EdDSA, instala e reabre na nova versão).
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.1/Terminals-1.0.1.zip" length="16301387" type="application/octet-stream" sparkle:edSignature="Fysx9oe2eHJIlt+LQikjX5g6Bjh4qYRHcwNHFRSGMMnP/NB0VzAxvaE4U/sZNVJ/catf5neS/Ur6pDgCukEOAQ=="/>
+        </item>
+        <item>
+            <title>1.0.0</title>
             <pubDate>Tue, 26 May 2026 01:40:21 -0300</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
