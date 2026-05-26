@@ -3,6 +3,18 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.5</title>
+            <pubDate>Tue, 26 May 2026 18:22:14 -0300</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.5
+
+- **Bases de conhecimento**: limite por base aumentado de 250 MB para 500 MB. Bases que estavam paradas por terem atingido o cap antigo retomam a sincronização automaticamente.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.5/Terminals-1.0.5.zip" length="16326917" type="application/octet-stream" sparkle:edSignature="Uaxq3ZJBxmAB34Zrm4iWzmqU9iWN0RbMX+8FIXDt/O2JCTdveJc6C1wXUGEr3yrLpVKDl+lKGsHXvQNuV9GVAw=="/>
+        </item>
+        <item>
             <title>1.0.4</title>
             <pubDate>Tue, 26 May 2026 04:14:34 -0300</pubDate>
             <sparkle:version>5</sparkle:version>
@@ -30,20 +42,6 @@
 Conserta o tamanho do diálogo de "Buscar atualizações…" — antes abria em tela cheia porque o `AppDelegate.configureInitialFrame` (que faz fit-to-screen das janelas principais do app) também pegava as janelas do Sparkle. Agora o diálogo abre no tamanho natural (~500-600 de largura), no centro da tela.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.3/Terminals-1.0.3.zip" length="16302168" type="application/octet-stream" sparkle:edSignature="OAwxa5TJtx1ay3eH/MbbDzGn+LTDCRFQTvLF6o1w5E8WUTI9104BB8AHP4hWZUVAbJH3+SWBAMeDJcEy80I7DQ=="/>
-        </item>
-        <item>
-            <title>1.0.2</title>
-            <pubDate>Tue, 26 May 2026 02:03:49 -0300</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.2
-
-Conserta bug onde `MARKETING_VERSION` não era bumpado pelo pipeline de release (`agvtool new-marketing-version` é silent no-op sem `VERSIONING_SYSTEM=apple-generic` no projeto). Substituído por `sed` direto no `pbxproj`.
-
-Resultado: o número de versão exibido pelo Sparkle agora corresponde ao publicado.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.2/Terminals-1.0.2.zip" length="16301375" type="application/octet-stream" sparkle:edSignature="KXCRur9GXYypfF05wlbxQbGUU6ZdZbx+6hCg9EmUGB+O4l13AatGY8QmB7ArbKHnwYX5yTHUpnmfLIboN9FCCw=="/>
         </item>
     </channel>
 </rss>
