@@ -3,6 +3,23 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.4</title>
+            <pubDate>Tue, 26 May 2026 04:14:34 -0300</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.4
+
+- **Manager `talk_terminal`**: agora suporta `wait` em shell terminals (espera resposta em vez de fire-and-forget) e normaliza argumentos JSON aninhados que vinham serializados duas vezes do LLM
+- **Project history**: novos métodos pra listar/contar eventos no escopo do workspace inteiro, não só por projeto
+- **CLI `terminals --version`**: imprime a versão do app que distribuiu o CLI (injetada via `Scripts/build-cli.sh` no build)
+- **Contexto/Memória**: avisa quando você passa um argumento posicional que parece flag (ex: `--foo`)
+- **Notificações de contexto**: ignora shell terminals em vez de tentar executar como agent
+- Refatorações internas no Manager (preprocessor de args, dispatch async pro talk_terminal)
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.4/Terminals-1.0.4.zip" length="16326893" type="application/octet-stream" sparkle:edSignature="5sxYiGoh9WUVgxhIvTsSC2kWFzjmv2o4OsnAQpToCP5UpldSR7L8nyUJcpfakZacfsch6nfe+DDCyrlZdqPdCw=="/>
+        </item>
+        <item>
             <title>1.0.3</title>
             <pubDate>Tue, 26 May 2026 02:09:15 -0300</pubDate>
             <sparkle:version>4</sparkle:version>
@@ -27,20 +44,6 @@ Conserta bug onde `MARKETING_VERSION` não era bumpado pelo pipeline de release 
 Resultado: o número de versão exibido pelo Sparkle agora corresponde ao publicado.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.2/Terminals-1.0.2.zip" length="16301375" type="application/octet-stream" sparkle:edSignature="KXCRur9GXYypfF05wlbxQbGUU6ZdZbx+6hCg9EmUGB+O4l13AatGY8QmB7ArbKHnwYX5yTHUpnmfLIboN9FCCw=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Tue, 26 May 2026 01:58:10 -0300</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.1
-
-Versão de teste do pipeline de release automatizado.
-
-Sem mudanças visíveis — valida o canal de auto-update end-to-end (Sparkle baixa, verifica assinatura EdDSA, instala e reabre na nova versão).
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.1/Terminals-1.0.1.zip" length="16301387" type="application/octet-stream" sparkle:edSignature="Fysx9oe2eHJIlt+LQikjX5g6Bjh4qYRHcwNHFRSGMMnP/NB0VzAxvaE4U/sZNVJ/catf5neS/Ur6pDgCukEOAQ=="/>
         </item>
     </channel>
 </rss>
