@@ -3,6 +3,20 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.2</title>
+            <pubDate>Tue, 26 May 2026 02:03:49 -0300</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.2
+
+Conserta bug onde `MARKETING_VERSION` não era bumpado pelo pipeline de release (`agvtool new-marketing-version` é silent no-op sem `VERSIONING_SYSTEM=apple-generic` no projeto). Substituído por `sed` direto no `pbxproj`.
+
+Resultado: o número de versão exibido pelo Sparkle agora corresponde ao publicado.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.2/Terminals-1.0.2.zip" length="16301375" type="application/octet-stream" sparkle:edSignature="KXCRur9GXYypfF05wlbxQbGUU6ZdZbx+6hCg9EmUGB+O4l13AatGY8QmB7ArbKHnwYX5yTHUpnmfLIboN9FCCw=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Tue, 26 May 2026 01:58:10 -0300</pubDate>
             <sparkle:version>2</sparkle:version>
