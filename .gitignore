@@ -1,0 +1,7 @@
+# Staging dir usado por generate_appcast (binários + notes vão pros Releases do GitHub, não pro repo)
+incoming/
+
+# Sparkle automaticamente move zips antigos pra cá (não queremos commitar)
+old_updates/
+
+.DS_Store

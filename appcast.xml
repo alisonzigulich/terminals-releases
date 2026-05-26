@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>terminals</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Tue, 26 May 2026 01:40:21 -0300</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.0
+
+Primeira versão pública.
+
+- Workspaces com múltiplos terminais, notas, navegadores e knowledge bases em canvas livre
+- Manager: chat LLM por workspace que orquestra os elementos do canvas via 60 tools (terminal, note, browser, knowledge, project, routine, memory, context, todo interno)
+- Saved Agents + Skills compartilhados entre terminais
+- CLI `terminals` instalado em `~/Library/Application Support/terminals/bin/` pra integração com claude / codex / gemini
+- Auto-update via Sparkle: o app checa atualizações em background a cada 24h
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.0/Terminals-1.0.0.zip" length="16301225" type="application/octet-stream" sparkle:edSignature="X/Qzs+QulsP+dn45ESzK+3eSNz6TN8hjsesbRP4svZc3gxTtgTF2ZfFGC4KGOdyAo8Tf7yOGVTkUjbEcEgexDA=="/>
+        </item>
+    </channel>
+</rss>
