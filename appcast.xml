@@ -3,6 +3,18 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.7</title>
+            <pubDate>Tue, 26 May 2026 23:52:17 -0300</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.7
+
+- **Scroll do trackpad no canvas**: corrigida a direção invertida do scroll de 2 dedos no eixo horizontal (deslizar pra direita movia o canvas pra esquerda, e vice-versa). O eixo vertical não foi afetado.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.7/Terminals-1.0.7.zip" length="16327096" type="application/octet-stream" sparkle:edSignature="hpQ9h2Ns57wub51OpUivXhEMBPQe68aHQ4GT0RD+F+KdAICIvehDSGsfKOv2FHPFuBM62FkIWNS1OdCr2Mi8AQ=="/>
+        </item>
+        <item>
             <title>1.0.6</title>
             <pubDate>Tue, 26 May 2026 22:27:54 -0300</pubDate>
             <sparkle:version>7</sparkle:version>
@@ -25,23 +37,6 @@
 - **Bases de conhecimento**: limite por base aumentado de 250 MB para 500 MB. Bases que estavam paradas por terem atingido o cap antigo retomam a sincronização automaticamente.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.5/Terminals-1.0.5.zip" length="16326917" type="application/octet-stream" sparkle:edSignature="Uaxq3ZJBxmAB34Zrm4iWzmqU9iWN0RbMX+8FIXDt/O2JCTdveJc6C1wXUGEr3yrLpVKDl+lKGsHXvQNuV9GVAw=="/>
-        </item>
-        <item>
-            <title>1.0.4</title>
-            <pubDate>Tue, 26 May 2026 04:14:34 -0300</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.4
-
-- **Manager `talk_terminal`**: agora suporta `wait` em shell terminals (espera resposta em vez de fire-and-forget) e normaliza argumentos JSON aninhados que vinham serializados duas vezes do LLM
-- **Project history**: novos métodos pra listar/contar eventos no escopo do workspace inteiro, não só por projeto
-- **CLI `terminals --version`**: imprime a versão do app que distribuiu o CLI (injetada via `Scripts/build-cli.sh` no build)
-- **Contexto/Memória**: avisa quando você passa um argumento posicional que parece flag (ex: `--foo`)
-- **Notificações de contexto**: ignora shell terminals em vez de tentar executar como agent
-- Refatorações internas no Manager (preprocessor de args, dispatch async pro talk_terminal)
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.4/Terminals-1.0.4.zip" length="16326893" type="application/octet-stream" sparkle:edSignature="5sxYiGoh9WUVgxhIvTsSC2kWFzjmv2o4OsnAQpToCP5UpldSR7L8nyUJcpfakZacfsch6nfe+DDCyrlZdqPdCw=="/>
         </item>
     </channel>
 </rss>
