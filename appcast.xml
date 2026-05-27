@@ -3,6 +3,18 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.6</title>
+            <pubDate>Tue, 26 May 2026 22:27:54 -0300</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.6
+
+- **Hooks dos CLIs (Claude/Codex/Gemini)**: corrigido o erro `Stop hook error: /bin/sh: /dev/tty: Device not configured` que aparecia no Claude Code em algumas instalações. Os hooks agora escrevem no path absoluto do PTY (`TERMINALS_PTY_PATH`, exportado pelo shell), em vez de depender do `/dev/tty` que falha quando o dispatcher de hooks spawna subprocessos sem controlling-tty.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.6/Terminals-1.0.6.zip" length="16327195" type="application/octet-stream" sparkle:edSignature="DwI7VpkHAIw6xVBaivjNMdXHxr2D3C4mbAJUDj6x+c+pMCba0CTFfVXqLNYYGx5/AF6BkCeVrT5s5POKd6cLCQ=="/>
+        </item>
+        <item>
             <title>1.0.5</title>
             <pubDate>Tue, 26 May 2026 18:22:14 -0300</pubDate>
             <sparkle:version>6</sparkle:version>
@@ -30,18 +42,6 @@
 - Refatorações internas no Manager (preprocessor de args, dispatch async pro talk_terminal)
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.4/Terminals-1.0.4.zip" length="16326893" type="application/octet-stream" sparkle:edSignature="5sxYiGoh9WUVgxhIvTsSC2kWFzjmv2o4OsnAQpToCP5UpldSR7L8nyUJcpfakZacfsch6nfe+DDCyrlZdqPdCw=="/>
-        </item>
-        <item>
-            <title>1.0.3</title>
-            <pubDate>Tue, 26 May 2026 02:09:15 -0300</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.3
-
-Conserta o tamanho do diálogo de "Buscar atualizações…" — antes abria em tela cheia porque o `AppDelegate.configureInitialFrame` (que faz fit-to-screen das janelas principais do app) também pegava as janelas do Sparkle. Agora o diálogo abre no tamanho natural (~500-600 de largura), no centro da tela.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.3/Terminals-1.0.3.zip" length="16302168" type="application/octet-stream" sparkle:edSignature="OAwxa5TJtx1ay3eH/MbbDzGn+LTDCRFQTvLF6o1w5E8WUTI9104BB8AHP4hWZUVAbJH3+SWBAMeDJcEy80I7DQ=="/>
         </item>
     </channel>
 </rss>
