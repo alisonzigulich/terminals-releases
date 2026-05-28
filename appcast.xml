@@ -3,6 +3,18 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.9</title>
+            <pubDate>Thu, 28 May 2026 18:12:09 -0300</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.9
+
+- **Diagnóstico de crashes**: a telemetria interna do canvas agora persiste em arquivo (`~/Library/Application Support/terminals/logs/`), mantendo os últimos 5 lançamentos. Sem efeito visível na experiência — serve pra diagnosticar com precisão crashes esporádicos de loop de constraints durante manipulação de muitos elementos no canvas, que antes não deixavam rastro acessível pós-crash.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.9/Terminals-1.0.9.zip" length="16347876" type="application/octet-stream" sparkle:edSignature="bm5kufZlNiQfpbZkux0aw3b4d6W/X/m2K3jQtCaAiQVx6wcG09ZRWadDvbHFQLomQ3gbEUIxV8XLT7jwnF8AAA=="/>
+        </item>
+        <item>
             <title>1.0.8</title>
             <pubDate>Wed, 27 May 2026 23:22:14 -0300</pubDate>
             <sparkle:version>9</sparkle:version>
@@ -26,18 +38,6 @@
 - **Scroll do trackpad no canvas**: corrigida a direção invertida do scroll de 2 dedos no eixo horizontal (deslizar pra direita movia o canvas pra esquerda, e vice-versa). O eixo vertical não foi afetado.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.7/Terminals-1.0.7.zip" length="16327096" type="application/octet-stream" sparkle:edSignature="hpQ9h2Ns57wub51OpUivXhEMBPQe68aHQ4GT0RD+F+KdAICIvehDSGsfKOv2FHPFuBM62FkIWNS1OdCr2Mi8AQ=="/>
-        </item>
-        <item>
-            <title>1.0.6</title>
-            <pubDate>Tue, 26 May 2026 22:27:54 -0300</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.6
-
-- **Hooks dos CLIs (Claude/Codex/Gemini)**: corrigido o erro `Stop hook error: /bin/sh: /dev/tty: Device not configured` que aparecia no Claude Code em algumas instalações. Os hooks agora escrevem no path absoluto do PTY (`TERMINALS_PTY_PATH`, exportado pelo shell), em vez de depender do `/dev/tty` que falha quando o dispatcher de hooks spawna subprocessos sem controlling-tty.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.6/Terminals-1.0.6.zip" length="16327195" type="application/octet-stream" sparkle:edSignature="DwI7VpkHAIw6xVBaivjNMdXHxr2D3C4mbAJUDj6x+c+pMCba0CTFfVXqLNYYGx5/AF6BkCeVrT5s5POKd6cLCQ=="/>
         </item>
     </channel>
 </rss>
