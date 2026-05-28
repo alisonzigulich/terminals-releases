@@ -3,6 +3,19 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.8</title>
+            <pubDate>Wed, 27 May 2026 23:22:14 -0300</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.8
+
+- **Boot do app**: corrigida a sensação de "trava" ao iniciar com múltiplos workspaces. Os workspaces agora carregam **sequencialmente** (o selecionado primeiro, os demais em background), com indicador de carregamento no switcher. Antes os 3 workspaces inicializavam em paralelo no main thread — todos os `WKWebView` + `sandbox-exec` competindo — e o app ficava segundos congelado na primeira abertura com cache frio do macOS.
+- **Spawn escalonado dentro do workspace**: shells e browsers agora distribuem o cold-start pelo runloop (terminais 20ms × idx, browsers 200ms × idx) em vez de tudo síncrono. Reduz o pico de freeze visual durante o carregamento.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.8/Terminals-1.0.8.zip" length="16347135" type="application/octet-stream" sparkle:edSignature="KqAGzTCzicI/2IkPRju6cklgDkaGiWHI/AnJ8pfDegk7rrWIOF4eV23xk/5TZoLC6JusBMV4eQ+tDMye2JmnAg=="/>
+        </item>
+        <item>
             <title>1.0.7</title>
             <pubDate>Tue, 26 May 2026 23:52:17 -0300</pubDate>
             <sparkle:version>8</sparkle:version>
@@ -25,18 +38,6 @@
 - **Hooks dos CLIs (Claude/Codex/Gemini)**: corrigido o erro `Stop hook error: /bin/sh: /dev/tty: Device not configured` que aparecia no Claude Code em algumas instalações. Os hooks agora escrevem no path absoluto do PTY (`TERMINALS_PTY_PATH`, exportado pelo shell), em vez de depender do `/dev/tty` que falha quando o dispatcher de hooks spawna subprocessos sem controlling-tty.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.6/Terminals-1.0.6.zip" length="16327195" type="application/octet-stream" sparkle:edSignature="DwI7VpkHAIw6xVBaivjNMdXHxr2D3C4mbAJUDj6x+c+pMCba0CTFfVXqLNYYGx5/AF6BkCeVrT5s5POKd6cLCQ=="/>
-        </item>
-        <item>
-            <title>1.0.5</title>
-            <pubDate>Tue, 26 May 2026 18:22:14 -0300</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.5
-
-- **Bases de conhecimento**: limite por base aumentado de 250 MB para 500 MB. Bases que estavam paradas por terem atingido o cap antigo retomam a sincronização automaticamente.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.5/Terminals-1.0.5.zip" length="16326917" type="application/octet-stream" sparkle:edSignature="Uaxq3ZJBxmAB34Zrm4iWzmqU9iWN0RbMX+8FIXDt/O2JCTdveJc6C1wXUGEr3yrLpVKDl+lKGsHXvQNuV9GVAw=="/>
         </item>
     </channel>
 </rss>
