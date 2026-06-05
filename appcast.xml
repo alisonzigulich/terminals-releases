@@ -3,6 +3,20 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.10</title>
+            <pubDate>Fri, 05 Jun 2026 15:49:19 -0300</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.10
+
+- **Travamento do canvas**: corrigido um defeito que podia fazer o canvas entrar em loop de renderização e congelar o app (beach ball) quando um elemento ficava com posição/tamanho inválido. A comparação de quadros passou a tolerar valores inválidos, e notas com quadro corrompido no disco são saneadas ao carregar.
+- **Editor de bases de conhecimento**: abrir o editor de uma base de conhecimento deixou de fazer leitura de disco síncrona na thread principal — some um micro-stutter ao abrir.
+- **Diagnóstico de travamentos**: a telemetria interna ganhou um watchdog de main thread (captura travamentos que não chegam a crashar), handlers de sinal e instrumentação da lista de arquivos do inspector. Sem efeito visível na experiência — serve pra localizar com precisão a causa de travamentos esporádicos.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.10/Terminals-1.0.10.zip" length="16353367" type="application/octet-stream" sparkle:edSignature="PBQYMxEN1OmkK7C6cspNseBEqY6qN17cdi9o1b6GO6I+XES7IkOnP8osPSqiDxSTUs4JETLwndEiGOCt/+NmCA=="/>
+        </item>
+        <item>
             <title>1.0.9</title>
             <pubDate>Thu, 28 May 2026 18:12:09 -0300</pubDate>
             <sparkle:version>10</sparkle:version>
@@ -26,18 +40,6 @@
 - **Spawn escalonado dentro do workspace**: shells e browsers agora distribuem o cold-start pelo runloop (terminais 20ms × idx, browsers 200ms × idx) em vez de tudo síncrono. Reduz o pico de freeze visual durante o carregamento.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.8/Terminals-1.0.8.zip" length="16347135" type="application/octet-stream" sparkle:edSignature="KqAGzTCzicI/2IkPRju6cklgDkaGiWHI/AnJ8pfDegk7rrWIOF4eV23xk/5TZoLC6JusBMV4eQ+tDMye2JmnAg=="/>
-        </item>
-        <item>
-            <title>1.0.7</title>
-            <pubDate>Tue, 26 May 2026 23:52:17 -0300</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.7
-
-- **Scroll do trackpad no canvas**: corrigida a direção invertida do scroll de 2 dedos no eixo horizontal (deslizar pra direita movia o canvas pra esquerda, e vice-versa). O eixo vertical não foi afetado.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.7/Terminals-1.0.7.zip" length="16327096" type="application/octet-stream" sparkle:edSignature="hpQ9h2Ns57wub51OpUivXhEMBPQe68aHQ4GT0RD+F+KdAICIvehDSGsfKOv2FHPFuBM62FkIWNS1OdCr2Mi8AQ=="/>
         </item>
     </channel>
 </rss>
