@@ -3,6 +3,22 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.11</title>
+            <pubDate>Sun, 07 Jun 2026 14:24:37 -0300</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.11
+
+- **Lista de arquivos do inspector**: agora dá pra criar pastas e arquivos **dentro de qualquer pasta** da lista (não só na raiz) pelo menu de contexto. E o menu "Nova pasta / Novo arquivo" passou a abrir clicando com o botão direito em **qualquer ponto** da área de arquivos — antes só funcionava perto da última linha.
+- **Notas**: clicar fora do corpo de uma nota sai do modo de edição automaticamente, recolhendo a seleção.
+- **Chat do Manager**: as mensagens mostram o horário ao passar o mouse, com formatação inteligente (relativo pra mensagens recentes, data pras antigas).
+- **Envio para terminais**: a injeção de mensagens em terminais ficou mais confiável e compatível com interfaces de terminal interativas (TUIs).
+- **Performance do canvas**: arrastar e redimensionar notas e bases de conhecimento ficou mais fluido, e a sincronização de posição dos elementos durante movimentações foi corrigida.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.11/Terminals-1.0.11.zip" length="16371777" type="application/octet-stream" sparkle:edSignature="O0F24pR5mKXA6HEbwZWlO0U1KJ5UpNHtpIFT30bK+YvxNvhY9DxEsD35Q5DCFo17ZT2UTdzHZal0E9HybwIwDA=="/>
+        </item>
+        <item>
             <title>1.0.10</title>
             <pubDate>Fri, 05 Jun 2026 15:49:19 -0300</pubDate>
             <sparkle:version>11</sparkle:version>
@@ -27,19 +43,6 @@
 - **Diagnóstico de crashes**: a telemetria interna do canvas agora persiste em arquivo (`~/Library/Application Support/terminals/logs/`), mantendo os últimos 5 lançamentos. Sem efeito visível na experiência — serve pra diagnosticar com precisão crashes esporádicos de loop de constraints durante manipulação de muitos elementos no canvas, que antes não deixavam rastro acessível pós-crash.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.9/Terminals-1.0.9.zip" length="16347876" type="application/octet-stream" sparkle:edSignature="bm5kufZlNiQfpbZkux0aw3b4d6W/X/m2K3jQtCaAiQVx6wcG09ZRWadDvbHFQLomQ3gbEUIxV8XLT7jwnF8AAA=="/>
-        </item>
-        <item>
-            <title>1.0.8</title>
-            <pubDate>Wed, 27 May 2026 23:22:14 -0300</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.8
-
-- **Boot do app**: corrigida a sensação de "trava" ao iniciar com múltiplos workspaces. Os workspaces agora carregam **sequencialmente** (o selecionado primeiro, os demais em background), com indicador de carregamento no switcher. Antes os 3 workspaces inicializavam em paralelo no main thread — todos os `WKWebView` + `sandbox-exec` competindo — e o app ficava segundos congelado na primeira abertura com cache frio do macOS.
-- **Spawn escalonado dentro do workspace**: shells e browsers agora distribuem o cold-start pelo runloop (terminais 20ms × idx, browsers 200ms × idx) em vez de tudo síncrono. Reduz o pico de freeze visual durante o carregamento.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.8/Terminals-1.0.8.zip" length="16347135" type="application/octet-stream" sparkle:edSignature="KqAGzTCzicI/2IkPRju6cklgDkaGiWHI/AnJ8pfDegk7rrWIOF4eV23xk/5TZoLC6JusBMV4eQ+tDMye2JmnAg=="/>
         </item>
     </channel>
 </rss>
