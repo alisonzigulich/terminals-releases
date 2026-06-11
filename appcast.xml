@@ -3,6 +3,22 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.0.12</title>
+            <pubDate>Thu, 11 Jun 2026 14:17:22 -0300</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.12
+
+- **Diff de mudanças do git**: a visualização de diff foi reescrita — agora mostra um diff unificado somente leitura no padrão do VSCode (staged compara com HEAD, unstaged compara com o índice), com destaque das mudanças dentro de cada linha e uma régua lateral de visão geral pra navegar rápido em arquivos grandes.
+- **Bases de conhecimento (código)**: o indexador passou a entender 8 novas linguagens (Rust, Java, Kotlin, Ruby, PHP, C, C++ e SQL) e a registrar o tipo de cada declaração (função, classe, etc.), melhorando a precisão das buscas em codebases. Documentos existentes serão reindexados automaticamente.
+- **Terminal sem responder ao teclado**: corrigida uma condição rara em que, após reiniciar um terminal, o shell novo podia parar de receber digitação; o app agora detecta e recupera a sessão automaticamente.
+- **Performance do canvas**: removida a animação contínua das conexões tracejadas, que consumia CPU a cada frame mesmo com o canvas parado.
+- **Diagnóstico**: a telemetria interna passou a distinguir travamentos reais de suspensões do sistema (sleep/App Nap) e a registrar consumo de memória nos relatórios — sem efeito visível na experiência.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.12/Terminals-1.0.12.zip" length="17732823" type="application/octet-stream" sparkle:edSignature="QCiQXrJTRgKQQAAxaSvAfXDnm2oUCGH65ShnNeflT5uWSXxNkG2R7laPODuA0NDkxeSKQ1U5usXXKUaOvRr3Bw=="/>
+        </item>
+        <item>
             <title>1.0.11</title>
             <pubDate>Sun, 07 Jun 2026 14:24:37 -0300</pubDate>
             <sparkle:version>12</sparkle:version>
@@ -31,18 +47,6 @@
 - **Diagnóstico de travamentos**: a telemetria interna ganhou um watchdog de main thread (captura travamentos que não chegam a crashar), handlers de sinal e instrumentação da lista de arquivos do inspector. Sem efeito visível na experiência — serve pra localizar com precisão a causa de travamentos esporádicos.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.10/Terminals-1.0.10.zip" length="16353367" type="application/octet-stream" sparkle:edSignature="PBQYMxEN1OmkK7C6cspNseBEqY6qN17cdi9o1b6GO6I+XES7IkOnP8osPSqiDxSTUs4JETLwndEiGOCt/+NmCA=="/>
-        </item>
-        <item>
-            <title>1.0.9</title>
-            <pubDate>Thu, 28 May 2026 18:12:09 -0300</pubDate>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.9
-
-- **Diagnóstico de crashes**: a telemetria interna do canvas agora persiste em arquivo (`~/Library/Application Support/terminals/logs/`), mantendo os últimos 5 lançamentos. Sem efeito visível na experiência — serve pra diagnosticar com precisão crashes esporádicos de loop de constraints durante manipulação de muitos elementos no canvas, que antes não deixavam rastro acessível pós-crash.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.9/Terminals-1.0.9.zip" length="16347876" type="application/octet-stream" sparkle:edSignature="bm5kufZlNiQfpbZkux0aw3b4d6W/X/m2K3jQtCaAiQVx6wcG09ZRWadDvbHFQLomQ3gbEUIxV8XLT7jwnF8AAA=="/>
         </item>
     </channel>
 </rss>
