@@ -3,6 +3,29 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.2.0</title>
+            <pubDate>Wed, 17 Jun 2026 17:55:52 -0300</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.2.0
+
+## Novidades
+
+- **Aviso de atualização na toolbar**: quando há uma versão nova disponível, um indicador discreto aparece na toolbar do canvas, ao lado da engrenagem — e fica visível até você atualizar, em vez de um pop-up que aparece uma vez e some. Um clique abre o diálogo de atualização de sempre. A verificação é silenciosa (na abertura e a cada 4 horas) e some quando você atualiza ou opta por pular a versão.
+- **Chat — fila de mensagens**: as mensagens que você envia enquanto o agente ainda está respondendo entram numa fila em vez de se perderem. Uma pílula mostra quantas estão pendentes e abre um popover para ver cada uma e remover as que não quiser mais antes de serem processadas.
+- **Git — ações em lote por pasta (modo árvore)**: no modo árvore da aba *Changes*, agora dá pra preparar (stage), tirar do preparo (unstage) ou descartar uma pasta inteira de uma vez, em vez de arquivo por arquivo.
+- **Git — as seções lembram como você deixou**: o estado expandido/recolhido de *Staged* e *Unstaged* passa a ser preservado entre sessões.
+- **Chat — busca de arquivos e conteúdo**: o agente do Chat agora conta com as ferramentas de busca por nome e por conteúdo no modo agêntico, encontrando arquivos e trechos diretamente em vez de recorrer a comandos de terminal.
+
+## Mudanças
+
+- **Criação de terminal mais simples e segura**: ao adicionar um terminal de IA, o modo "auto-aprovar" — que dispensava todas as confirmações do agente — foi removido; os agentes passam a sempre respeitar suas confirmações de aprovação. Também saiu a escolha de diretório personalizado: o terminal usa a pasta do workspace.
+- **Aba "Rotinas" nas Configurações**: foi removida do painel de Configurações; as rotinas continuam acessíveis pela seção do próprio workspace.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.2.0/Terminals-1.2.0.zip" length="18921525" type="application/octet-stream" sparkle:edSignature="WL7rWsHU2WLa0VOy6kR6SL2QZBwhH4M2iyYEeGfaGLNrruS26BF0FX5Cq5GsmdlAWBvord6NrrgbqXToDTjGDg=="/>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Wed, 17 Jun 2026 09:52:03 -0300</pubDate>
             <sparkle:version>15</sparkle:version>
@@ -79,22 +102,6 @@ O canvas ganhou um quinto tipo de elemento: uma **janela de chat nativa** que co
 - **Diagnóstico**: a telemetria interna passou a distinguir travamentos reais de suspensões do sistema (sleep/App Nap) e a registrar consumo de memória nos relatórios — sem efeito visível na experiência.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.12/Terminals-1.0.12.zip" length="17732823" type="application/octet-stream" sparkle:edSignature="QCiQXrJTRgKQQAAxaSvAfXDnm2oUCGH65ShnNeflT5uWSXxNkG2R7laPODuA0NDkxeSKQ1U5usXXKUaOvRr3Bw=="/>
-        </item>
-        <item>
-            <title>1.0.11</title>
-            <pubDate>Sun, 07 Jun 2026 14:24:37 -0300</pubDate>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.11
-
-- **Lista de arquivos do inspector**: agora dá pra criar pastas e arquivos **dentro de qualquer pasta** da lista (não só na raiz) pelo menu de contexto. E o menu "Nova pasta / Novo arquivo" passou a abrir clicando com o botão direito em **qualquer ponto** da área de arquivos — antes só funcionava perto da última linha.
-- **Notas**: clicar fora do corpo de uma nota sai do modo de edição automaticamente, recolhendo a seleção.
-- **Chat do Manager**: as mensagens mostram o horário ao passar o mouse, com formatação inteligente (relativo pra mensagens recentes, data pras antigas).
-- **Envio para terminais**: a injeção de mensagens em terminais ficou mais confiável e compatível com interfaces de terminal interativas (TUIs).
-- **Performance do canvas**: arrastar e redimensionar notas e bases de conhecimento ficou mais fluido, e a sincronização de posição dos elementos durante movimentações foi corrigida.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.11/Terminals-1.0.11.zip" length="16371777" type="application/octet-stream" sparkle:edSignature="O0F24pR5mKXA6HEbwZWlO0U1KJ5UpNHtpIFT30bK+YvxNvhY9DxEsD35Q5DCFo17ZT2UTdzHZal0E9HybwIwDA=="/>
         </item>
     </channel>
 </rss>
