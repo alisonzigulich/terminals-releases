@@ -3,6 +3,20 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.2.1</title>
+            <pubDate>Fri, 19 Jun 2026 00:27:37 -0300</pubDate>
+            <sparkle:version>17</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.2.1
+
+- **Chat com o engine Codex**: além do Claude, agora dá pra criar um chat usando o Codex como motor de IA — a escolha aparece na criação do chat. O rodapé traz o seletor de modelo e a política de aprovação próprios do Codex, e os anexos de imagem funcionam normalmente.
+- **Alinhamento à grade no canvas**: ao mover ou redimensionar elementos, eles passam a se encaixar numa grade, deixando o arranjo mais alinhado e previsível.
+- **Ajustes de interface**: o indicador de "atualização disponível" na toolbar ganhou um respiro lateral e o comportamento de rolagem foi refinado.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.2.1/Terminals-1.2.1.zip" length="19096384" type="application/octet-stream" sparkle:edSignature="tCjaHETfB7S0d+9Ll/CxLpbUA+Yk/Vf0Nsb9/JEfXeztny03CJ1Ex2DVs5cxXRbegznyJ6Lp0U/D/SGxQMTlCA=="/>
+        </item>
+        <item>
             <title>1.2.0</title>
             <pubDate>Wed, 17 Jun 2026 17:55:52 -0300</pubDate>
             <sparkle:version>16</sparkle:version>
@@ -86,22 +100,6 @@ O canvas ganhou um quinto tipo de elemento: uma **janela de chat nativa** que co
 - **Cabeçalho fixo da aba "Changes" do Git**: o texto das linhas transparecia por baixo do título ao rolar; corrigido com fundo opaco.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.1.0/Terminals-1.1.0.zip" length="18970915" type="application/octet-stream" sparkle:edSignature="LAp1SZO8IasH4Ma7PsmEGy9aMxHgbLtfP+JEq94+XytGaBtGCN5D0Ghos7wMuEZjx4foNq8EQ6/k01slJ7TUDQ=="/>
-        </item>
-        <item>
-            <title>1.0.12</title>
-            <pubDate>Thu, 11 Jun 2026 14:17:22 -0300</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.0.12
-
-- **Diff de mudanças do git**: a visualização de diff foi reescrita — agora mostra um diff unificado somente leitura no padrão do VSCode (staged compara com HEAD, unstaged compara com o índice), com destaque das mudanças dentro de cada linha e uma régua lateral de visão geral pra navegar rápido em arquivos grandes.
-- **Bases de conhecimento (código)**: o indexador passou a entender 8 novas linguagens (Rust, Java, Kotlin, Ruby, PHP, C, C++ e SQL) e a registrar o tipo de cada declaração (função, classe, etc.), melhorando a precisão das buscas em codebases. Documentos existentes serão reindexados automaticamente.
-- **Terminal sem responder ao teclado**: corrigida uma condição rara em que, após reiniciar um terminal, o shell novo podia parar de receber digitação; o app agora detecta e recupera a sessão automaticamente.
-- **Performance do canvas**: removida a animação contínua das conexões tracejadas, que consumia CPU a cada frame mesmo com o canvas parado.
-- **Diagnóstico**: a telemetria interna passou a distinguir travamentos reais de suspensões do sistema (sleep/App Nap) e a registrar consumo de memória nos relatórios — sem efeito visível na experiência.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.0.12/Terminals-1.0.12.zip" length="17732823" type="application/octet-stream" sparkle:edSignature="QCiQXrJTRgKQQAAxaSvAfXDnm2oUCGH65ShnNeflT5uWSXxNkG2R7laPODuA0NDkxeSKQ1U5usXXKUaOvRr3Bw=="/>
         </item>
     </channel>
 </rss>
