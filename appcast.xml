@@ -3,6 +3,44 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.3.0</title>
+            <pubDate>Thu, 25 Jun 2026 21:27:02 -0300</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.3.0
+
+## Novidades
+
+- **Manager nos engines Claude e Codex**: o Manager (coordenador do
+  workspace) agora roda sobre os mesmos motores de IA dos chats — Claude
+  ou Codex — em vez do motor anterior. Ganha seletor de engine/modelo,
+  memória própria e respeita as mesmas aprovações dos demais agentes. O
+  histórico do workspace foi reestruturado, separado da conversa.
+- **Modo plano renderizado no chat**: quando um agente entra em modo
+  plano e apresenta o plano antes de executar, ele aparece formatado no
+  chat, fácil de revisar antes de aprovar.
+- **Chat mais fluido**: a rolagem automática foi refinada e um indicador
+  mostra quando o agente está trabalhando, inclusive em respostas longas
+  e tarefas em segundo plano.
+
+## Mudanças
+
+- **Memória dos agentes unificada**: a memória nativa dos engines foi
+  desligada — a memória do terminals (do elemento + contexto
+  compartilhado) passa a ser a fonte única. Apagar uma lembrança no app
+  agora realmente a esquece, sem ressurgir de um armazenamento paralelo.
+- **Nomenclatura de ferramentas unificada**: nomes de ferramentas e
+  comandos usados pelos agentes foram padronizados, deixando a CLI e os
+  agentes mais consistentes.
+- **Persistência de turnos mais robusta**: um registro write-ahead
+  protege os turnos do chat contra perdas se algo interromper no meio.
+- **Menos CPU nas animações**: o indicador de atividade passou a animar
+  na GPU, reduzindo o consumo de processador com o chat aberto.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.3.0/Terminals-1.3.0.zip" length="18575345" type="application/octet-stream" sparkle:edSignature="7GKyIvzKNLnTJtohVPR0jnkdKOtivM5Rvh0vMKUK2O6I5t6u+y0Ds+BcNeeYdHCLJbQfAKbnPDKNz3y4XLQRCg=="/>
+        </item>
+        <item>
             <title>1.2.1</title>
             <pubDate>Fri, 19 Jun 2026 00:27:37 -0300</pubDate>
             <sparkle:version>17</sparkle:version>
@@ -38,68 +76,6 @@
 - **Aba "Rotinas" nas Configurações**: foi removida do painel de Configurações; as rotinas continuam acessíveis pela seção do próprio workspace.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.2.0/Terminals-1.2.0.zip" length="18921525" type="application/octet-stream" sparkle:edSignature="WL7rWsHU2WLa0VOy6kR6SL2QZBwhH4M2iyYEeGfaGLNrruS26BF0FX5Cq5GsmdlAWBvord6NrrgbqXToDTjGDg=="/>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Wed, 17 Jun 2026 09:52:03 -0300</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.1.0
-
-## Novo: elemento Chat
-
-O canvas ganhou um quinto tipo de elemento: uma **janela de chat nativa** que conversa com um agente de IA (Claude Code) rodando localmente, lado a lado com terminais, notas, navegadores e bases de conhecimento — e conectável por cabos como qualquer outro elemento.
-
-- **Conversa nativa**: transcript em bolhas, respostas em markdown rico (código destacado, listas, blocos), um cartão para cada ação do agente e indicador de "pensando".
-- **Persona, memória e sessões**: cada chat pode assumir a persona e as skills de um agente salvo, tem memória própria persistente e suporta várias conversas — criar, alternar e apagar sessões pela barra de título.
-- **Modelo, modo e esforço**: escolha o modelo, o modo de permissão e o nível de esforço direto no rodapé; a lista de modelos é descoberta automaticamente do próprio Claude Code, sem nada fixo no app.
-- **Comandos "/" e menções "@"**: autocomplete de slash commands (com descrição) e menção a arquivos do projeto com busca aproximada.
-- **Cartões de ferramenta clicáveis**: cada ação vira um cartão com status visual (rodando / sucesso / falha); clicar no nome do arquivo abre o editor e clicar no diff de um Edit/Write mostra a alteração exata daquela ação.
-- **Aprovação e perguntas interativas**: quando o agente precisa de permissão, um cartão oferece Permitir / Permitir sempre / Negar; o agente também pode fazer perguntas de múltipla escolha respondidas ali mesmo.
-- **Tarefas em segundo plano**: quando o agente dispara uma tarefa demorada em segundo plano (por exemplo, um build ou um script longo), o chat retoma a conversa sozinho assim que ela termina, em vez de ficar parado à espera de uma nova mensagem.
-- **Anexos**: anexe imagens e texto por botão, arrastar-e-soltar em qualquer ponto do chat ou colar.
-- **Uso e limites à vista**: uma pílula no rodapé mostra quanto do contexto a conversa já consumiu e detalha o custo da sessão e os limites de uso de 5 horas / semanais da conta — e esse indicador é preservado ao alternar entre sessões ou recarregar o workspace, sem precisar esperar o próximo turno.
-- **Membro de pleno direito da equipe**: como os terminais, o chat troca mensagens com outros agentes, é alvo de rotinas agendadas e tem memória e contexto próprios.
-
-## Manager
-
-- **Cria e gerencia chats**: o gerenciador do workspace agora cria elementos Chat (com ícone, cor, agente, modelo, modo e esforço), edita um chat existente sem reiniciar a conversa, conecta chats a outros elementos e os inclui na montagem de equipes.
-- **Rotinas para chats**: o Manager pode agendar rotinas que disparam uma mensagem num chat no horário marcado.
-
-## Bases de conhecimento e arquivos
-
-- **Bases até 4× maiores**: o limite por base de conhecimento subiu de 500 MB para 2 GB.
-- **Seleção múltipla no navegador de arquivos**: selecione vários arquivos com ⌘+clique e shift+clique, com menu em lote — Mostrar no Finder, Copiar caminhos, Duplicar e Mover para o Lixo — no padrão do Finder / VS Code.
-- **Editor abre na hora**: arquivos grandes passam a exibir o texto imediatamente, com o destaque de sintaxe entrando logo em seguida, em vez da espera anterior pelo processamento completo.
-
-## Linha de comando (terminals)
-
-- **Novo `terminals chat`**: `create` (cria um chat já conectado), `get` (config, estado e sessão) e `read` (imprime o transcript em texto).
-- **`terminals list` mostra chats**: a listagem passou a incluir os chats conectados e os visíveis, com engine, estado e número de sessões.
-- **Novos `note delete` e `browser delete`**: remova notas e navegadores pelo CLI (a nota vai para a Lixeira; o navegador tem a sessão encerrada).
-- **CLI a partir de qualquer agente**: comandos antes restritos a terminais — `note create`, `browser create`, `project create`, `routine`, `talk`, `skill` — agora também funcionam a partir de elementos Chat.
-
-## Canvas e desempenho
-
-- **Pan e zoom muito mais fluidos**: arrastar e dar zoom com muitos elementos pesados abertos deixou de engasgar — só os elementos visíveis na tela pagam o custo de re-layout, e a sincronização do minimapa e do zoom acontece ao fim do gesto, não a cada quadro.
-- **Diálogos não recarregam mais o canvas**: abrir ou fechar um modal deixou de reconstruir todos os elementos por baixo.
-
-## Bugs corrigidos
-
-- **Segunda janela ou segundo app duplicava o canvas**: abrir uma nova janela (Cmd+N) ou um segundo processo do app criava um canvas duplicado escrevendo no mesmo estado em disco. O app agora é estritamente de janela única, com trava de instância à prova de corrida.
-- **Comandos do CLI e a comunicação entre elementos podiam travar até reiniciar**: um canal de comunicação interno "zumbi" (presente, mas sem ninguém escutando) deixava de se recuperar sozinho. Agora o app detecta o canal morto e o restabelece em segundos.
-- **Inspector de Git congelava e a memória subia**: sincronizar uma base de conhecimento em modo pasta dentro de um repositório git podia pendurar o filtro de `.gitignore` e travar o painel de Git (status, diff e preparação de mudanças). Corrigido.
-- **Navegador de arquivos travava a interface**: a lista de arquivos varria o disco a cada quadro durante pan, zoom e redimensionamento, congelando a UI. Agora a lista é mantida em cache e só se reconstrói quando algo realmente muda.
-- **Abrir arquivos grandes travava a interface**: a leitura do arquivo era feita na thread principal; agora roda em segundo plano.
-- **Controles não respondiam com zoom diferente de 100%**: botões, menus e rolagem dentro dos elementos podiam ficar "mortos" fora do zoom nativo. Corrigido.
-- **Pan e zoom tremiam com muitos elementos abertos**: além da fluidez, o tremor visual durante o gesto foi eliminado.
-- **Cursor de texto vazava entre elementos**: o cursor em "I" de um terminal podia aparecer por cima de outro elemento à frente; agora cada elemento reivindica corretamente o cursor da sua área.
-- **Processos de agente ficavam órfãos e vazavam memória**: fechar um terminal ou um workspace podia deixar o processo do agente vivo e reter memória; havia ainda pequenos vazamentos ao remover navegadores e notas e engasgos ao criar/remover cabos. Tudo corrigido.
-- **O chat do Manager puxava a rolagem enquanto você lia o histórico**: agora a conversa só acompanha automaticamente quando você está no fim, com um botão para voltar ao presente.
-- **Cabeçalho fixo da aba "Changes" do Git**: o texto das linhas transparecia por baixo do título ao rolar; corrigido com fundo opaco.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.1.0/Terminals-1.1.0.zip" length="18970915" type="application/octet-stream" sparkle:edSignature="LAp1SZO8IasH4Ma7PsmEGy9aMxHgbLtfP+JEq94+XytGaBtGCN5D0Ghos7wMuEZjx4foNq8EQ6/k01slJ7TUDQ=="/>
         </item>
     </channel>
 </rss>
