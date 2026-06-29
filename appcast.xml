@@ -3,6 +3,52 @@
     <channel>
         <title>terminals</title>
         <item>
+            <title>1.4.0</title>
+            <pubDate>Mon, 29 Jun 2026 00:56:24 -0300</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Terminals 1.4.0
+
+## Novidades
+
+- **Status dos agentes na barra de menus**: o Terminals agora vive também
+  na barra de menus do Mac, com uma central de atividade que mostra o que
+  cada agente — de todos os workspaces — está fazendo. Há alertas sonoros
+  e um aviso visual quando um agente precisa de atenção ou termina uma
+  tarefa, então dá pra acompanhar sem ficar de olho no canvas.
+- **Novo ícone e identidade visual**: o app ganhou um ícone novo no Dock e
+  um glifo discreto na barra de menus.
+- **Iniciar ao ligar o Mac**: nova opção em Configurações → Preferências
+  para abrir o Terminals automaticamente no login.
+- **Cards no chat para conexões e memória**: conexões entre elementos,
+  falas entre agentes e registros na memória compartilhada agora aparecem
+  como cards dedicados no chat, fáceis de acompanhar de relance.
+- **Personalização e boas-vindas do Manager**: o app passa a considerar
+  seu nome e tratamento, e o Manager te recebe com uma mensagem de
+  boas-vindas personalizada.
+- **Busca nas Configurações**: um campo de busca para encontrar qualquer
+  opção rapidamente.
+- **Tempo em projetos**: fases e tarefas passam a registrar quanto tempo
+  foi gasto em cada uma.
+
+## Mudanças
+
+- **Chats abrem corretamente ao iniciar pelo Dock**: corrigido o erro que
+  impedia chats Claude e Codex de abrir quando o app era iniciado fora do
+  terminal.
+- **Uso da conta consistente entre chats**: o indicador de uso (5h/7d) da
+  conta Claude agora fica igual em todos os chats e no Manager da mesma
+  conta, em vez de divergir entre eles.
+- **Rolagem do chat isolada do canvas**: rolar o histórico de um chat não
+  arrasta mais o canvas junto.
+- **Menos ruído e ajustes de layout**: chats inativos não recebem mais
+  notificações de memória compartilhada, e a aba de personalização, a
+  barra lateral e a altura padrão do chat tiveram ajustes finos.
+]]></description>
+            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.4.0/Terminals-1.4.0.zip" length="19762673" type="application/octet-stream" sparkle:edSignature="J5ae0WOFQy6BQ0fTY4tpEzKdIamLjATDADNWZslNCgxoddw1V9X/tFQv+IksjlNz92+LIfvEzGEglU6Fu80XAg=="/>
+        </item>
+        <item>
             <title>1.3.0</title>
             <pubDate>Thu, 25 Jun 2026 21:27:02 -0300</pubDate>
             <sparkle:version>18</sparkle:version>
@@ -53,29 +99,6 @@
 - **Ajustes de interface**: o indicador de "atualização disponível" na toolbar ganhou um respiro lateral e o comportamento de rolagem foi refinado.
 ]]></description>
             <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.2.1/Terminals-1.2.1.zip" length="19096384" type="application/octet-stream" sparkle:edSignature="tCjaHETfB7S0d+9Ll/CxLpbUA+Yk/Vf0Nsb9/JEfXeztny03CJ1Ex2DVs5cxXRbegznyJ6Lp0U/D/SGxQMTlCA=="/>
-        </item>
-        <item>
-            <title>1.2.0</title>
-            <pubDate>Wed, 17 Jun 2026 17:55:52 -0300</pubDate>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.6</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Terminals 1.2.0
-
-## Novidades
-
-- **Aviso de atualização na toolbar**: quando há uma versão nova disponível, um indicador discreto aparece na toolbar do canvas, ao lado da engrenagem — e fica visível até você atualizar, em vez de um pop-up que aparece uma vez e some. Um clique abre o diálogo de atualização de sempre. A verificação é silenciosa (na abertura e a cada 4 horas) e some quando você atualiza ou opta por pular a versão.
-- **Chat — fila de mensagens**: as mensagens que você envia enquanto o agente ainda está respondendo entram numa fila em vez de se perderem. Uma pílula mostra quantas estão pendentes e abre um popover para ver cada uma e remover as que não quiser mais antes de serem processadas.
-- **Git — ações em lote por pasta (modo árvore)**: no modo árvore da aba *Changes*, agora dá pra preparar (stage), tirar do preparo (unstage) ou descartar uma pasta inteira de uma vez, em vez de arquivo por arquivo.
-- **Git — as seções lembram como você deixou**: o estado expandido/recolhido de *Staged* e *Unstaged* passa a ser preservado entre sessões.
-- **Chat — busca de arquivos e conteúdo**: o agente do Chat agora conta com as ferramentas de busca por nome e por conteúdo no modo agêntico, encontrando arquivos e trechos diretamente em vez de recorrer a comandos de terminal.
-
-## Mudanças
-
-- **Criação de terminal mais simples e segura**: ao adicionar um terminal de IA, o modo "auto-aprovar" — que dispensava todas as confirmações do agente — foi removido; os agentes passam a sempre respeitar suas confirmações de aprovação. Também saiu a escolha de diretório personalizado: o terminal usa a pasta do workspace.
-- **Aba "Rotinas" nas Configurações**: foi removida do painel de Configurações; as rotinas continuam acessíveis pela seção do próprio workspace.
-]]></description>
-            <enclosure url="https://github.com/alisonzigulich/terminals-releases/releases/download/v1.2.0/Terminals-1.2.0.zip" length="18921525" type="application/octet-stream" sparkle:edSignature="WL7rWsHU2WLa0VOy6kR6SL2QZBwhH4M2iyYEeGfaGLNrruS26BF0FX5Cq5GsmdlAWBvord6NrrgbqXToDTjGDg=="/>
         </item>
     </channel>
 </rss>
